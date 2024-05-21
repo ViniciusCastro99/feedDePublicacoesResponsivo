@@ -1,0 +1,185 @@
+/* Estilos gerais */
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+  }
+  
+  #superior, #inferior {
+    background-color: rgb(80, 77, 77);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #superior {
+    justify-content: flex-start;
+  }
+  
+  #inferior {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    /* Adicionando centralização vertical e horizontal */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btnNegrito {
+    margin: 3px;
+    font-weight: bold;
+  }
+  
+  #pesquisa {
+    margin: 10px;
+    width: 300px; 
+    border-radius: 10px;
+    /* Alterando a posição da barra de pesquisa para a direita */
+    margin-left: auto;
+  }
+  
+  #publicacao {
+    width: 80%;
+    max-width: 800%px;
+    height: 50px;
+    border-radius: 20px;
+    margin: 5px;
+  }
+  
+  #publicar {
+    width: 60%;
+    max-width: 100px;
+    margin: 5px;
+  }
+  
+  #publicacoes {
+    width: 100%;
+    max-width: 900px;
+    margin: 10px;
+  }
+  
+  /* Estilos para publicações */
+  #textoInicial, #textPubli, .tblComentario {
+    background-color: white;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 20px;
+    color: black;
+    text-align: left;
+  }
+  
+  #paragrafoInicial {
+    text-align: center;
+  }
+  
+  #textoInicial p, #textPubli {
+    font-weight: 300;
+  }
+  
+  #textPubli {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  #curtirPublicacaoid {
+    border-radius: 50px;
+    float: right;
+    margin: 10px;
+  }
+  
+  .apresentaCurtida {
+    float: right;
+    margin: 15px;
+  }
+  
+  .coment {
+    margin: 5px;
+    width: 75%;
+    max-width: 700px;
+    border-radius: 20px;
+    height: 35px;
+    padding: 10px;
+  }
+  
+  .tblComentario {
+    width: 100%;
+  }
+  
+  .linhaComentario {
+    color: black;
+    font-weight: 100;
+  }
+  
+  #excluiComentario {
+    float: right;
+    margin: 20px;
+  }
+  
+  .imgPerfilPublicacao {
+    border-radius: 1000px;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+  }
+  
+  
+  /* Estilos para tabelas */
+  table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  table tr:first-child td:first-child {
+    border-top-left-radius: 10px;
+  }
+  
+  table tr:first-child td:last-child {
+    border-top-right-radius: 10px;
+  }
+  
+  table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+  }
+  
+  table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+  }
+  
+  td {
+    padding: 5px;
+    word-wrap: break-word; /* Garante que palavras longas serão quebradas */
+  }
+  
+  /* Ajustes responsivos */
+  @media (max-width: 768px) {
+    #superior, #inferior {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #pesquisa {
+      width: 100%;
+      margin-top: 10px;
+      
+      margin-left: 0;
+    }
+  
+    .btnNegrito {
+      width: 100%;
+      margin: 5px 0;
+    }
+  
+    #publicacao, #publicar {
+      width: 100%;
+      max-width: none;
+    }
+  }
+  
